@@ -97,14 +97,5 @@ Tab:CreateInput({
    end,
 })
 local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
-local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"},Section)
-local Sets = Tab:CreateSection('Set Functions',false)
-local SButton
-SButton = Tab:CreateButton({
-   Name = "Button Example",
-   Interact = 'Interact',
-   SectionParent = Sets,
-   Callback = function()
-    SButton:Set(nil,'New Interaction')
    end
 })
