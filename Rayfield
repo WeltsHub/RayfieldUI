@@ -24,34 +24,16 @@ local Window = Rayfield:CreateWindow({
       Key = "Weltshub"
    }
 })
-local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
-local Tab2 = Window:CreateTab("Tab Example 2") -- Title, Image
-local Section = Tab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
-local Button = Tab:CreateButton({
+   local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
+   local Tab2 = Window:CreateTab("Tab Example 2") -- Title, Image
+   local Section = Tab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+   local Button = Tab:CreateButton({
    Name = "Infinite Yield",
    Info = "The Classic Universal admin.", -- Speaks for itself, Remove if none.
    Interact = 'Press to load',
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
-})
-local Toggle = Tab:CreateToggle({
-   Name = "WIP",
-   Info = "none", -- Speaks for itself, Remove if none.
-   CurrentValue = false,
-   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-      print(Value)
-   end,
-})
-local ColorPicker = Tab:CreateColorPicker({
-	Name = "Color Picker",
-	Info = 'info or description',
-	Color = Color3.fromRGB(2,255,255),
-	Flag = "ColorPicker1", 
-	Callback = function(Value)
-		print(Value)
-	end,
 })
     local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
     local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"},Section)
