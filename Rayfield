@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
 local Window = Rayfield:CreateWindow({
    Name = "Rayfield",
-   LoadingTitle = "Welt's Rayfield'",
+   LoadingTitle = "Welt's Rayfield",
    LoadingSubtitle = "by Welt",
    ConfigurationSaving = {
       Enabled = true,
@@ -10,12 +10,12 @@ local Window = Rayfield:CreateWindow({
    },
    Discord = {
       Enabled = false,
-      Invite = "sirius", -- The Discord invite code, do not include discord.gg/
+      Invite = "nuh", -- The Discord invite code, do not include discord.gg/
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Welt's Rayfield'",
+      Title = "Welt's Rayfield (Also touching you btw)",
       Subtitle = "Key System",
       Note = "Join the discord (discord.gg/yf65Urkhwv)",
       FileName = "Key",
