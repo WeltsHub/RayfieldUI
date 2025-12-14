@@ -35,6 +35,79 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
+local ColorPicker = Tab:CreateColorPicker({
+	Name = "Color Picker",
+	Info = 'info or description',
+	Color = Color3.fromRGB(2,255,255),
+	Flag = "ColorPicker1", 
+	Callback = function(Value)
+		print(Value)
+	end
+})
+local Slider = Tab:CreateSlider({
+   Name = "Speed",
+   Info = "Change Walkspeed",
+   Range = {0, 100},
+   Increment = 10,
+   Suffix = "Speed",
+   CurrentValue = 1,
+   Flag = "Slider1", 
+   Callback = function(Value)
+   print(Value)
+   end,
+})
+local Section2 = Tab:CreateSection("Inputs Examples",true)
+Tab:CreateInput({
+   Name = "Numbers Only",
+   Info = "Input info/Description.",
+   PlaceholderText = "Amount",
+   NumbersOnly = true,
+   OnEnter = true,
+   RemoveTextAfterFocusLost = true,
+   Callback = function(Text)
+      print(Text)
+   end,
+})
+Tab:CreateInput({
+   Name = "11 Characters Limit",
+   Info = "Input info/Description.",
+   PlaceholderText = "Text",
+   CharacterLimit = 15,
+   RemoveTextAfterFocusLost = true,
+   Callback = function(Text)
+      print(Text)
+   end,
+})
+Tab:CreateInput({
+   Name = "No RemoveTextAfterFocusLost",
+   Info = "Input info/Description.",
+   PlaceholderText = "Input",
+   RemoveTextAfterFocusLost = false,
+   Callback = function(Text)
+      print(Text)
+   end,
+})
+local Section3= Tab:CreateSection("Dropdown Examples",true)
+local MultiSelectionDropdown = Tab:CreateDropdown({
+   Name = "Multi Selection",
+   Options = {"Option 1","Option 2",'Option 3'},
+   CurrentOption = {"Option 1","Option 3"} ,
+   MultiSelection = true,
+   Flag = "Dropdown1",
+   Callback = function(Option)
+    print(Option)
+   end,
+})
+local SingleSelection = Tab:CreateDropdown({
+   Name = "Single Selection",
+   Options = {"Option 1","Option 2"},
+   CurrentOption = "Option 1",
+   MultiSelection = false,
+   Flag = "Dropdown2", 
+   Callback = function(Option)
+    print(Option)
+   end,
+})
 local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
 local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"},Section)
 local Sets = Tab:CreateSection('Set Functions',false)
@@ -46,4 +119,5 @@ SButton = Tab:CreateButton({
    Callback = function()
     SButton:Set(nil,'New Interaction')
    end
+})
 })
