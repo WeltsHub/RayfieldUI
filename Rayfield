@@ -35,8 +35,19 @@ local Window = Rayfield:CreateWindow({
    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
+   local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
+   local Tab2 = Window:CreateTab("Tab Example 2") -- Title, Image
+   local Section = Tab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+   local Button = Tab:CreateButton({
+   Name = "Nameless Admin",
+   Info = "Another Classical Universal admin.", -- Speaks for itself, Remove if none.
+   Interact = 'Press to load',
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+   end,
+})
     local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
-    local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"},Section)
+    local Paragraph = Tab:CreateParagraph({Title = "Script hub", Content = "using v2.7"},Section)
     local Sets = Tab:CreateSection('Set Functions',false)
     local SButton
     SButton = Tab:CreateButton({
