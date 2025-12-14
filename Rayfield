@@ -35,7 +35,7 @@ local Window = Rayfield:CreateWindow({
    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
-local Button = Tab:CreateButton({
+   local Button = Tab:CreateButton({
    Name = "Nameless admin",
    Info = "Another Classical Universal Admin", -- Speaks for itself, Remove if none.
    Interact = 'Press to load',
@@ -43,7 +43,7 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
    end,
 })
-local Button = Tab:CreateButton({
+   local Button = Tab:CreateButton({
    Name = "Shader",
    Info = "Rtx Shader", -- Speaks for itself, Remove if none.
    Interact = 'Press to load',
@@ -51,7 +51,39 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet("https://pastebin.com/raw/uqD7VqQU"))()
    end,
 })
-    local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
+   local Button = Tab:CreateButton({
+   Name = "Aura",
+   Info = "Makes a Aura of Unanchored Parts", -- Speaks for itself, Remove if none.
+   Interact = 'Press to load',
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/JmAw1ucM"))()
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "Backdoor Scanner - Can get you banned",
+   Info = "Read Before use", -- Speaks for itself, Remove if none.
+   Interact = 'Press to load',
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Its-LALOL/LALOL-Hub/main/Backdoor-Scanner/script'))()
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "Dance hub",
+   Info = "Loads the Shop", -- Speaks for itself, Remove if none.
+   Interact = 'Press to load',
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Free-UGC-Emotes-Script-48649"))()
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "Universal Flinging Script",
+   Info = "Works on TSB or other games", -- Speaks for itself, Remove if none.
+   Interact = 'Press to load',
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Touch-Fling-Script-19645"))()
+   end,
+})
+    local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 1.2 ",Section)
     local Paragraph = Tab:CreateParagraph({Title = "Script hub", Content = "using v2.7"},Section)
     local Sets = Tab:CreateSection('Set Functions',false)
     local SButton
