@@ -96,27 +96,6 @@ Tab:CreateInput({
       print(Text)
    end,
 })
-local Section3= Tab:CreateSection("Dropdown Examples",true)
-local MultiSelectionDropdown = Tab:CreateDropdown({
-   Name = "Multi Selection",
-   Options = {"Option 1","Option 2",'Option 3'},
-   CurrentOption = {"Option 1","Option 3"} ,
-   MultiSelection = true,
-   Flag = "Dropdown1",
-   Callback = function(Option)
-    print(Option)
-   end,
-})
-local SingleSelection = Tab:CreateDropdown({
-   Name = "Single Selection",
-   Options = {"Option 1","Option 2"},
-   CurrentOption = "Option 1",
-   MultiSelection = false,
-   Flag = "Dropdown2", 
-   Callback = function(Option)
-    print(Option)
-   end,
-})
 local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
 local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"},Section)
 local Sets = Tab:CreateSection('Set Functions',false)
