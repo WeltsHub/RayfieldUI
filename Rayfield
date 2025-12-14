@@ -41,11 +41,25 @@ local Button = Tab:CreateButton({
    Interact = 'Press to load',
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
-   -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Shader",
+   Info = "Rtx Shader", -- Speaks for itself, Remove if none.
+   Interact = 'Press to load',
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/uqD7VqQU"))()
    end,
 })
     local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
     local Paragraph = Tab:CreateParagraph({Title = "Script hub", Content = "using v2.7"},Section)
     local Sets = Tab:CreateSection('Set Functions',false)
+    local SButton
+    SButton = Tab:CreateButton({
+    Name = "Ignore",
+    Interact = 'Interact',
+    SectionParent = Sets,
+    Callback = function()
+    SButton:Set(nil,'New Interaction')
    end
 })
