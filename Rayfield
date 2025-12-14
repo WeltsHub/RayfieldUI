@@ -36,5 +36,8 @@ local Button = Tab:CreateButton({
    end,
 })
 local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
+local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"},Section)
+local Sets = Tab:CreateSection('Set Functions',false)
+local SButton
    end
 })
