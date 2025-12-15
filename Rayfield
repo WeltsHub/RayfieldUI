@@ -10,12 +10,12 @@ local Window = Rayfield:CreateWindow({
    },
    Discord = {
       Enabled = false,
-      Invite = "nuh", -- The Discord invite code, do not include discord.gg/
+      Invite = "sirius", -- The Discord invite code, do not include discord.gg/
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Welt's Rayfield (Also touching you btw)",
+      Title = "Welt's Rayfield'",
       Subtitle = "Key System",
       Note = "Join the discord (discord.gg/yf65Urkhwv)",
       FileName = "Key",
@@ -24,10 +24,10 @@ local Window = Rayfield:CreateWindow({
       Key = "Weltshub"
    }
 })
-   local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
-   local Tab2 = Window:CreateTab("Tab Example 2") -- Title, Image
-   local Section = Tab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
-   local Button = Tab:CreateButton({
+local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
+local Tab2 = Window:CreateTab("Tab Example 2") -- Title, Image
+local Section = Tab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+local Button = Tab:CreateButton({
    Name = "Infinite Yield",
    Info = "The Classic Universal admin.", -- Speaks for itself, Remove if none.
    Interact = 'Press to load',
@@ -91,10 +91,10 @@ local Window = Rayfield:CreateWindow({
    loadstring(game:HttpGet("https://pastebin.com/raw/YkAzLJLu"))()
    end,
 })
-   local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
-   local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"},Section)
-   local Sets = Tab:CreateSection('Set Functions',false)
-   local SButton
+local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
+local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"},Section)
+local Sets = Tab:CreateSection('Set Functions',false)
+local SButton
 SButton = Tab:CreateButton({
    Name = "Button Example",
    Interact = 'Interact',
