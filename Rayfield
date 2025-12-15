@@ -1,12 +1,12 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
 local Window = Rayfield:CreateWindow({
-   Name = "Rayfield",
-   LoadingTitle = "Welt's Rayfield'",
+   Name = "Welts hub",
+   LoadingTitle = "Welt's Rayfield",
    LoadingSubtitle = "by Welt",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Rayfield"
+      FileName = "Welts hub"
    },
    Discord = {
       Enabled = false,
@@ -24,9 +24,25 @@ local Window = Rayfield:CreateWindow({
       Key = "Weltshub"
    }
 })
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Info = "Button info/Description.", -- Speaks for itself, Remove if none.
+   Interact = 'Changable',
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Autohub - BETA",
+   Info = "Also by me.", -- Speaks for itself, Remove if none.
+   Interact = 'Press to get scripts for desired game',
+   Callback = function()
+   https://pastebin.com/raw/YkAzLJLu
+   end,
+})
 local Tab = Window:CreateTab("Rayfield", 4483362458) -- Title, Image
 local Tab2 = Window:CreateTab("UI") -- Title, Image
-local Section = Tab:CreateSection("Section Example",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
+local Section = Tab:CreateSection("Information",false) -- The 2nd argument is to tell if its only a Title and doesnt contain element
 local Button = Tab:CreateButton({
    Name = "Infinite Yield",
    Info = "The Classic Universal admin.", -- Speaks for itself, Remove if none.
@@ -35,8 +51,8 @@ local Button = Tab:CreateButton({
    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
    end,
 })
-local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 0.1 ",Section)
-local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"},Section)
+local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 1.2 ",Section)
+local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "using libary 2.7"},Section)
 local Sets = Tab:CreateSection('Set Functions',false)
 local SButton
 SButton = Tab:CreateButton({
