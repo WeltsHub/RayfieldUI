@@ -1,7 +1,7 @@
-local Rayfield = loadstring(game:HttpGet('https://pastebin.com/raw/0iZCMKwh'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
 local Window = Rayfield:CreateWindow({
    Name = "Rayfield",
-   LoadingTitle = "Welt's Rayfield",
+   LoadingTitle = "Welt's Rayfield'",
    LoadingSubtitle = "by Welt",
    ConfigurationSaving = {
       Enabled = true,
