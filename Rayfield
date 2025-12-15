@@ -83,6 +83,14 @@ local Window = Rayfield:CreateWindow({
    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Free-UGC-Emotes-Script-48649"))()
    end,
 })
+   local Button = Tab:CreateButton({
+   Name = "Load Hub for desired game - BETA 0.1,
+   Info = "IN BETA", -- Speaks for itself, Remove if none.
+   Interact = 'Press to load',
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/YkAzLJLu"))()
+   end,
+})
     local Label = Tab:CreateLabel("Thanks for Using my own hub, Work in progress | V 1.2 ",Section)
     local Paragraph = Tab:CreateParagraph({Title = "Script hub", Content = "using v2.7"},Section)
     local Sets = Tab:CreateSection('Set Functions',false)
