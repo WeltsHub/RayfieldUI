@@ -37,7 +37,7 @@ local Button = Tab:CreateButton({
    Info = "Also by me.", -- Speaks for itself, Remove if none.
    Interact = 'Press to get scripts for desired game',
    Callback = function()
-   loadstring(game:HttpGet("https://https://pastebin.com/raw/YkAzLJLu"))()
+    loadstring(game:HttpGet("https://https://pastebin.com/raw/YkAzLJLu"))()
    end,
 })
 local Tab = Window:CreateTab("Rayfield", 4483362458) -- Title, Image
